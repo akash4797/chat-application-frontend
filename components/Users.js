@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import Profile from "./Profile";
 import { IoLogOutOutline } from "react-icons/io5";
-import UserImageOrWIthout from "./userImageOrWithout";
+import UserImageOrWithout from "./userImageOrWithout";
 import { useUser, useUserUpdate } from "../context/AuthContext";
 import { useRouter } from "next/router";
 import {
@@ -86,7 +86,7 @@ export default function Users() {
                 onClick={() => selectUserHandler(item)}
               >
                 <div className="w-10">
-                  <UserImageOrWIthout
+                  <UserImageOrWithout
                     userImage={item.imageurl}
                     userName={item.username}
                   />

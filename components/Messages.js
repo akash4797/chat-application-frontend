@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import UserImageOrWIthout from "./userImageOrWithout";
+import UserImageOrWithout from "./userImageOrWithout";
 import { gql, useLazyQuery, useMutation } from "@apollo/client";
 import Message from "./Message";
 import {
@@ -102,7 +102,7 @@ export default function Messages() {
         <div className="h-full relative flex flex-col">
           <div className="py-3 bg-gray-200 px-5 flex gap-2 items-center rounded-tr-xl">
             <div className="w-10">
-              <UserImageOrWIthout
+              <UserImageOrWithout
                 // @ts-ignore
                 userImage={selectedUser.imageurl}
                 // @ts-ignore
