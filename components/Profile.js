@@ -1,5 +1,5 @@
 import React from "react";
-import UserImageOrWithout from "./userImageOrWithout";
+import UserImageOrWithout from "./UserImageOrWithout";
 
 export default function Profile({ user }) {
   return (
