@@ -16,7 +16,7 @@ const wsLink =
   typeof window !== "undefined"
     ? new GraphQLWsLink(
         createClient({
-          url: "ws://localhost:4000/graphql",
+          url: "ws://peaceful-cliffs-29874.herokuapp.com/graphql",
           connectionParams: {
             Authorization: `Bearer ${getCookie("token")}`,
           },
@@ -25,7 +25,7 @@ const wsLink =
     : null;
 
 let httpLink = createHttpLink({
-  uri: "http://localhost:4000/graphql",
+  uri: "https://peaceful-cliffs-29874.herokuapp.com/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {
