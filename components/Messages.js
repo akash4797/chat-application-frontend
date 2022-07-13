@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import UserImageOrWIthout from "./userImageOrWIthout";
+import UserImageOrWIthout from "./userImageOrWithout";
 import { gql, useLazyQuery, useMutation } from "@apollo/client";
 import Message from "./Message";
 import {

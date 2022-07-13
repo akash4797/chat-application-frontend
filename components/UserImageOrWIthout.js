@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function UserImageOrWIthout({ userImage, userName }) {
+export default function UserImageOrWithout({ userImage, userName }) {
   return (
     <div
       className={`rounded-full w-10 h-10 overflow-hidden flex justify-center items-center bg-gray-800 text-white`}

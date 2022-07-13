@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { gql, useQuery } from "@apollo/client";
 import Profile from "./Profile";
 import { IoLogOutOutline } from "react-icons/io5";
-import UserImageOrWIthout from "./userImageOrWIthout";
+import UserImageOrWIthout from "./userImageOrWithout";
 import { useUser, useUserUpdate } from "../context/AuthContext";
 import { useRouter } from "next/router";
 import {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoCreateOutline } from "react-icons/io5";
 import Popup from "reactjs-popup";
 import { AiOutlineClose } from "react-icons/ai";
-import UserImageOrWIthout from "./userImageOrWIthout";
+import UserImageOrWIthout from "./UserImageOrWithout";
 import { BiArrowBack } from "react-icons/bi";
 import { IoSend } from "react-icons/io5";
 import { useFormik } from "formik";
