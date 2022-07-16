@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import { gql, useLazyQuery } from "@apollo/client";
-import { useRouter } from "next/router";
 import { CgSpinner } from "react-icons/cg";
 import { useUserUpdate } from "../context/AuthContext";
 
@@ -26,14 +25,13 @@ export default function Login() {
   const [serverPasswordError, setServerPasswordError] = useState(null);
 
   //NOTE hooks initializing
-  const router = useRouter();
   const userUpdate = useUserUpdate();
 
   //NOTE handle Mutation
   const [loginUser, { loading }] = useLazyQuery(LOGIN_USER, {
     onCompleted(data) {
       userUpdate({type:"login",payload:data.login})
-      router.push("/inbox");
+      window.location.href = "/inbox"
     },
     onError(err) {
       const errors = err.graphQLErrors[0].extensions.errors;
