@@ -16,7 +16,7 @@ const wsLink =
   typeof window !== "undefined"
     ? new GraphQLWsLink(
         createClient({
-          url: "wss://peaceful-cliffs-29874.herokuapp.com/graphql",
+          url: "wss://chatapi.unifyxent.com/graphql",
           connectionParams: {
             Authorization: `Bearer ${getCookie("token")}`,
           },
@@ -25,7 +25,7 @@ const wsLink =
     : null;
 
 let httpLink = createHttpLink({
-  uri: "https://peaceful-cliffs-29874.herokuapp.com/graphql",
+  uri: "https://chatapi.unifyxent.com/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {

@@ -4,7 +4,7 @@ export default async function Middleware(req,res) {
   const curl = req.nextUrl.clone();
   const token = req.cookies.get("token");
   if (token) {
-    const response = await fetch("https://peaceful-cliffs-29874.herokuapp.com/verify", {
+    const response = await fetch("https://chatapi.unifyxent.com/verify", {
       headers: {
         "Content-Type": "application/json",
         authorization: "Bearer " + token,

@@ -10,6 +10,7 @@ import {
   useConversations,
 } from "../context/CoversationsContext";
 import CreateNewMessage from "./CreateNewMessage";
+import Image from "next/image";
 
 const GET_USERS = gql`
   query GetUsers {
@@ -131,10 +132,13 @@ export default function Users() {
 
 
   return (
-    <div className="col-span-1 flex flex-col bg-gray-200 rounded-l-xl overflow-x-hidden">
+    <>
       <div className="bg-gray-300 py-4 px-3 rounded-tl-xl flex flex-col gap-3">
         <div className="flex justify-between px-3">
-          <span className="font-semibold text-lg">Chats</span>
+          <span className="font-semibold text-lg">
+            {/* <Image src={"/logo.png"} width={63} height={58} alt={"logo"} /> */}
+            Chats
+          </span>
           <CreateNewMessage alluser={users} />
         </div>
         <input
@@ -160,6 +164,6 @@ export default function Users() {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }

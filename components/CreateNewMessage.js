@@ -91,7 +91,7 @@ export default function CreateNewMessage({ alluser }) {
         {
           // @ts-ignore
           (close) => (
-            <div className="backdrop-blur-sm bg-black/30 h-screen w-screen flex justify-center items-center">
+            <div className="backdrop-blur-sm bg-black/30 h-screen w-screen flex justify-center items-center px-5">
               {/* Message Part */}
               <div
                 className={`${

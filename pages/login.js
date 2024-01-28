@@ -87,9 +87,9 @@ export default function Login() {
   //NOTE return result
   return (
     <Layout>
-      <div className="flex justify-center items-center bg-purple-700 h-full">
+      <div className="flex justify-center items-center bg-purple-700 h-full px-5 md:px-0">
         <form
-          className="flex flex-col shadow-lg py-10 bg-purple-200 w-1/3 justify-center items-center gap-4 rounded-lg"
+          className="flex flex-col shadow-lg py-10 bg-purple-200 w-full md:w-1/3 justify-center items-center gap-4 rounded-lg"
           onBlur={formik.handleBlur}
           onSubmit={formik.handleSubmit}
         >
